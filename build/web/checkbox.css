@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 de mai. de 2024, 17:59:47
+    Author     : Sergio
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#formulario {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%; /* Increased width for better form layout */
+    max-height: 90vh; /* Ensuring the box fits within the viewport height */
+    overflow-y: auto; /* Adding scroll if content exceeds max height */
+    box-sizing: border-box; /* Including padding and border in element's total width and height */
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px; /* Adjust spacing between checkboxes */
+}
+
+button[type="submit"] {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    transform: scale(1.05);
+}

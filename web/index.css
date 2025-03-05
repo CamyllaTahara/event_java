@@ -1,0 +1,171 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 de mai. de 2024, 21:04:18
+    Author     : Sergio
+*/
+
+
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 50%;
+            max-height: 90vh; 
+            overflow-y: auto; 
+            box-sizing: border-box; 
+            border: 3px solid dodgerblue; 
+        }
+        fieldset {
+            border: none;
+            padding: 0; 
+            margin: 0; 
+        }
+        legend {
+            border: 1px solid dodgerblue;
+            padding: 10px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 8px;
+            margin-bottom: 20px; 
+        }
+        .inputBox {
+            position: relative;
+            margin-bottom: 15px; /* Reduced margin for better spacing */
+        }
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            padding: 8px 0;
+        }
+        .labelInput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput {
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+        #submit {
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        #submit:hover {
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+        }
+        .box::-webkit-scrollbar {
+            width: 12px; 
+            background-color: rgba(0, 0, 0, 0); 
+        }
+        .box::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3); 
+            border-radius: 10px; 
+        }
+       .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#button1 {
+    display: inline-block;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: white;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+    width: calc(48% - 5px); 
+}
+
+#button1:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    transform: scale(1.05);
+}
+.inputUser:focus ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: white; 
+    font-size: 15px; 
+}
+
+#submitCadastrar, #submitConsultarTodos {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    transition: transform 0.2s; /* Adicionando transição de 0.2 segundos para a transformação */
+}
+
+#submitCadastrar:hover, #submitConsultarTodos:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    transform: scale(1.05); /* Aumentando a escala em 5% ao passar o mouse */
+}
+
+#button1 {
+    display: inline-block;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    color: white;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s;
+    width: calc(48% - 5px);
+}
+
+#button1:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    transform: scale(1.05);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Cadastrar Evento</title>
+    <script>
+        function disableRequiredFields() {
+            const fields = document.querySelectorAll('.inputUser');
+            fields.forEach(field => field.removeAttribute('required'));
+        }
+
+        function enableRequiredFields() {
+            const fields = document.querySelectorAll('.inputUser');
+            fields.forEach(field => field.setAttribute('required', 'required'));
+        }
+    </script>
+        
+</head>
+<body>
+    <div class="box">
+        <form name="f1" action="Evento_Controller" method="post">
+            <fieldset>
+                <legend><b>Agenda de Eventos</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="txtevento" id="txtevento" class="inputUser" required>
+                    <label for="txtevento" class="labelInput">Nome do Evento</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtdia" id="txtdia" class="inputUser" required>
+                    <label for="txtdia" class="labelInput">Data</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txthorario" id="txthorario" class="inputUser" required>
+                    <label for="txthorario" class="labelInput">Horário</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtarea" id="txtarea" class="inputUser" required>
+                    <label for="txtarea" class="labelInput">Área do Evento</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtlocalevento" id="txtlocalevento" class="inputUser" required>
+                    <label for="txtlocalevento" class="labelInput">Local</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtconvidado" id="txtconvidado" class="inputUser" required>
+                    <label for="txtconvidado" class="labelInput">Nome do Convidado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtemail" id="txtemail" class="inputUser" required>
+                    <label for="txtemail" class="labelInput">Email do Convidado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtwhatsapp" id="txtwhatsapp" class="inputUser" required>
+                    <label for="txtwhatsapp" class="labelInput">Whatsapp do Convidado</label>
+                    <a href="checkbox.html" id="button1">Receber notificações</a>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="txtparticipantes" id="txtparticipantes" class="inputUser" required>
+                    <label for="txtparticipantes" class="labelInput">Número de Participantes</label>
+                </div>
+                <br><br>
+                <input type="submit" name="btnoperacao" value="Cadastrar" id="submitCadastrar" onclick="enableRequiredFields()">
+                <input type="submit" name="btnoperacao" value="ConsultarTodos" id="submitConsultarTodos" onclick="disableRequiredFields()">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

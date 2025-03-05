@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="checkbox.css">
+                
+                     
+    </head>
+    <body>
+        <div id="formulario" >
+        <form action="Evento_Controller"> 
+            <center>
+                Escolha uma opção para enviar as informações do evento para o convidado: <br><br>
+            <input type="checkbox" id="email" name="cbnotify" value="Email" checked disabled> E-mail <br>
+            <input type="checkbox" id="SMS" name="cbnotify" value="Sms"> SMS <br>
+            <input type="checkbox" id="WhatsApp" name="cbnotify" value="Whats"> WhatsApp<br>
+            <input type="checkbox" id="Email" name="cbnotify" value="Email" checked hidden>  <br>
+            <button type="submit" name="btnoperacao" value="Notif" > Confirmar </button> 
+            </center>
+        </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 30 de mai. de 2024, 17:06:37
+    Author     : Sergio
+*/
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            
+        }
+        h1{
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            border: 3px solid dodgerblue;
+            width: 80%;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: dodgerblue;
+        }
+
+        th, td {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: dodgerblue;
+        }
+
+        #button2 {
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            border: none;
+            padding: 25px 60px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+           
+        }
+
+        #button2:hover {
+            background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+            transform: scale(1.05); 
+        }
+        #centralizar{
+    position:absolute; 
+    top:78%;
+    left:45%;
+    text-align: center;
+  
+}
