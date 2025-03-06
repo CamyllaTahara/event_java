@@ -1,4 +1,4 @@
-#🎉 Event Java - Agendamento de Eventos
+# 🎉 Event Java - Agendamento de Eventos
 Um projeto feito em Java + MySQL para facilitar a vida de quem precisa gerenciar eventos.
 
 🛠️ Tecnologias utilizadas
